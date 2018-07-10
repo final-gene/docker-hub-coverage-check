@@ -1,6 +1,5 @@
 # Coverage check
-[![CircleCI](https://circleci.com/gh/final-gene/docker-hub-coverage-check/tree/master.svg?style=svg)](https://circleci.com/gh/final-gene/docker-hub-coverage-check/tree/master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1bf4a0ebb47f4015805568b7694067ae)](https://www.codacy.com/app/final-gene/docker-hub-coverage-check?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=final-gene/docker-hub-coverage-check&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/final-gene/docker-hub-coverage-check/tree/master.svg?style=svg)](https://circleci.com/gh/final-gene/docker-hub-coverage-check/tree/master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1bf4a0ebb47f4015805568b7694067ae)](https://www.codacy.com/app/final-gene/docker-hub-coverage-check?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=final-gene/docker-hub-coverage-check&amp;utm_campaign=Badge_Grade)
 
 This is a image to check the coverage given by a clover XML file.
 

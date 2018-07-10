@@ -9,4 +9,4 @@ WORKDIR /app
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
-CMD ["-"]
+CMD [""]
