@@ -1,21 +1,29 @@
 NAME = coverage-check
-VERSION = 1.0
 
-.PHONY: build clean
+VERSIONS = 1.8
 
-build:
-	docker run \
+.PHONY: build
+build: ${VERSIONS}
+
+.PHONY: ${VERSIONS}
+${VERSIONS}:
+	@echo "Build ${@}"
+
+	@docker run \
 		--rm \
 		--volume "$(shell pwd)":/app \
 		finalgene/hadolint \
-		${VERSION}/Dockerfile
+		${@}/Dockerfile
 
-	docker build \
+	@docker build \
 		--no-cache \
-		--tag finalgene/${NAME}:dev \
-		./${VERSION}
+		--tag finalgene/${NAME}:${@}-dev \
+		${@}/
 
+	@docker images finalgene/${NAME}:${@}-dev
+
+.PHONY: clean
 clean:
-	-docker rmi \
+	-@docker rmi \
 		--force \
-		$(shell docker images finalgene/${NAME}:dev -q)
+		$(shell docker images finalgene/${NAME}:*-dev -q)
