@@ -1,6 +1,6 @@
 NAME = coverage-check
 
-VERSIONS = 1.8
+VERSIONS = 1.0
 
 .PHONY: build
 build: ${VERSIONS}

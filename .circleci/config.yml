@@ -34,20 +34,20 @@ version: 2
             docker images
 
 jobs:
-  validate-1.8:
+  validate-1.0:
     environment:
-      VERSION: "1.8"
+      VERSION: "1.0"
     <<: *validate_template
-  build-1.8:
+  build-1.0:
     environment:
-      VERSION: "1.8"
+      VERSION: "1.0"
     <<: *build_template
 
 workflows:
   version: 2
   validate_and_build:
     jobs:
-      - validate-1.8
-      - build-1.8:
+      - validate-1.0
+      - build-1.0:
           requires:
-            - validate-1.8
+            - validate-1.0
