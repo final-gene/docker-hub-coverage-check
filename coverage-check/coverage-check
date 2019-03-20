@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 /**
  * Based on https://github.com/michaelmoussa/php-coverage-checker

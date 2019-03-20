@@ -5,9 +5,6 @@ This is a image to check the coverage given by a clover XML file.
 
 This image provides a script based on https://github.com/michaelmoussa/php-coverage-checker.
 
-## Supported tags and respective Dockerfile links
-* `1.0`, `latest` [(Dockerfile)](https://github.com/finalgene/docker-hub-coverage-check/blob/master/1.0/Dockerfile)
-
 ## How to use this image
 For analyzing the coverage you can run the following.
 
