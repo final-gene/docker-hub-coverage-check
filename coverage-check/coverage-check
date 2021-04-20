@@ -9,9 +9,7 @@
 $reportFile = $argv[1];
 $limit = min(100.0, max(0.0, (float)$argv[2]));
 
-if (!$limit
-    || !file_exists($reportFile)
-) {
+if (!file_exists($reportFile)) {
     echo <<<'USAGE'
 
 Coverage Check
