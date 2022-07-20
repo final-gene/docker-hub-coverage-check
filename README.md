@@ -1,6 +1,8 @@
 # Coverage check
 
-This is a image to check the coverage given by a clover XML file.
+[![Docker build and publish](https://github.com/final-gene/docker-hub-coverage-check/actions/workflows/publish.yml/badge.svg)](https://github.com/final-gene/docker-hub-coverage-check/actions/workflows/publish.yml)
+
+This is an image to check the coverage given by a clover XML file.
 
 This image provides a script based on https://github.com/michaelmoussa/php-coverage-checker.
 
